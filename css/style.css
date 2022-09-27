@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   }
+
+
+   /* BODY */
+body{
+   font-family: 'Roboto', sans-serif;
+}
+.body__principal{
+    width: 100vw;
+    height: 170vh;
+    background-color: black;
+    display: grid;
+    grid-template-rows: .5fr 3fr 1fr ;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: "header header header"
+                         "main main main"
+                         "footerprin footerprin footerprin";
+   }
+.body__pages{
+   width: 100vw;
+   height: 100vh;
+   display: grid;
+   grid-template-rows: 1fr 3fr .5fr;
+   grid-template-columns: 1fr 2fr .5fr;
+   grid-template-areas: "header header header"
+                        "main main main"
+                        "footer footer footer" ;
+   }
+
+
+   /* MAIN */
+.main__pages{
+   /* height: 80vh;
+   width: 100vw; */
+   grid-area: main;
+}
+.main__pagprincipal{
+   height: 120vh;
+   grid-area: main;
+  }
+
+
+.headerpages{
+   grid-area: header;
+}
+
+.bannermystic{
+   width: 100%;
+   height: 25vh;
+}
+
+nav{
+    height: 10vh;
+    grid-area: nav;
+   }
+   
+ul{
+   list-style: none;
+}   
+.menu__nav li a{
+    background-color:white;
+    color:  deeppink ;
+    text-decoration: none;
+    padding: 10px 30px;
+    display: block;
+   }
+
+.menu__nav > li{
+    float: left;
+   }
+
+.menu__nav li a:hover{
+    background: black;
+   }
+
+.menu__nav li:hover > ul{
+    display: block;
+   }
+
+#registro{
+    float: right;
+   }
+
+.menu__nav ul{
+    display: none;
+    position: absolute;
+    min-width: 150px;
+   }
+
+.section__new__arrivals{
+   height: 50vh ;
+
+}
+.new__arrivals{
+   width: 100%;
+   height: 100%;
+}
+
+.imagenes1{
+   height: 30vh ;
+    margin-left: 30%;
+   }
+
+.imagenes2{
+   height: 30vh ;
+    margin-left: 30%;
+   }
+
+.imgtop1{
+    width: 20vw;
+    height: 100%;
+    padding: 10px;
+    border: 2px solid deeppink;
+   }
+
+.imgtop3{
+    width: 20vw;
+    height: 30vh;
+    padding: 10px;
+    border: 2px solid deeppink;
+   }
+.short2{
+    width: 20vw;
+    height: 30vh;
+    padding: 10px;
+    border: 2px solid deeppink;
+   }
+
+.short4{
+    width: 20vw;
+    height: 30vh;
+    padding: 10px;
+    border: 2px solid deeppink;
+   }
+.metodos{
+    display: inline-block;
+    background-color: white;
+    width: 80vw;
+    height: 10vh;
+    border-radius: 20px;
+    box-shadow: 0px 0px 60px deeppink;
+   }
+.metodos__buttons{
+    float: right;
+    background-color: white;
+    color: deeppink;
+    margin-right: 150px;
+    margin-top: 25px;
+    width: 10vw;
+    height: 5vh;
+    border: none;
+    font-weight: bolder;
+   }
+
+.footer__pagprincipal{
+    height: 20vh;
+    color: deeppink;
+    display: flex;
+    grid-area: footerprin;
+   }
+
+.footer__pages {
+   /* height: 10vh; */
+   grid-area: footer;
+}
+
+.footer__top{
+   width: 50%;
+   background-color: white;
+}
+
+.footer__horario{
+   width: 50%;
+   background-color: white;
+}
+
+.footer__cambio{
+   width: 50%;
+   background-color: white;
+}
+
+
+  /* Formas de pago */
+#logos__pagos{
+    display: flex;
+    justify-content: space-around;
+   }
+
+.img__pagos{
+    width: 50px;
+    height: 50px;
+   }
+
+#titulos__pagos{
+   padding-left: 50px;
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-around;
+
+}
+
+#formas__pagos{
+   margin-top: 20px;
+   display: flex;
+   justify-content: space-evenly;
+   text-align: center;
+   }
